@@ -990,9 +990,18 @@ section {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+
+  .nimsatheme .image1 {
+    width: 35%;
+    height: 8%;
+  }
+
+}
+
 /* About Nimsa Section - Home Page */
 
-.abnimsatheme {
+.missiontheme {
   --color-default: #ffffff;
   --color-default-rgb: 255, 255, 255;
   --color-background: #FFFFFF;
@@ -1005,40 +1014,48 @@ section {
   justify-content: center;
 }
 
-.abnimsatheme .container {
+.missiontheme .container {
   position: relative;
   text-align: center;
 }
 
-.abnimsatheme .image1 {
-  width: 15%;
-  height: 30px;
-}
-
-.abnimsatheme .image1a {
-  margin-top: 3%;
+.missiontheme .image1a {
   width: 30%;
   height: 8%;
 }
 
-.abnimsatheme .two-columns {
-  margin-top: 3%;
-  display: flex;
-  justify-content: space-between;
+.missiontheme .read-more {
+  background: var(--color-primary);
+  color: var(--color-inverse);
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.abnimsatheme .column {
-  flex: 1;
-  padding: 10px;
-  border: none !important;
+.missiontheme .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
 }
 
-.abnimsatheme .imag0 {
-  width: 80%;
-  height: 100%;
+.missiontheme .read-more:hover {
+  background: rgba(var(--color-primary-rgb), 0.8);
+  padding-right: 19px;
 }
 
-.abnimsatheme p {
+.missiontheme .read-more:hover i {
+  margin-left: 10px;
+}
+
+.missiontheme p {
   margin-top: 20px;
   font-size: 18px;
   color: #000000;
@@ -1046,55 +1063,37 @@ section {
   margin-bottom: 20px;
 }
 
-.abnimsatheme .three-columns {
+.missiontheme .three-columns {
   margin-top: 3%;
   display: flex;
   justify-content: space-between;
 }
 
-.abnimsatheme .columny {
+.missiontheme .columny {
   flex: 1;
   padding: 10px;
   border: none !important;
 }
 
-.abnimsatheme .image2 {
+.missiontheme .image2 {
   width: 100%;
   height: 70px;
 }
 
+@media (max-width: 768px) {
 
-/* Clients Section - Home Page
-------------------------------*/
-.clients {
-  padding: 10px 0;
-}
+  .missiontheme .image1a {
+    width: 50%;
+    height: 12%;
+  }
 
-.clients .client-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.clients .client-logo img {
-  padding: 40px;
-  max-width: 80%;
-  transition: 0.3s;
-  opacity: 0.5;
-  filter: grayscale(100);
-}
-
-.clients .client-logo img:hover {
-  filter: none;
-  opacity: 1;
-}
-
-@media (max-width: 640px) {
-  .clients .client-logo img {
-    padding: 20px;
+  .missiontheme .three-columns {
+    margin-top: 0;
+    display: block;
   }
 }
+
+
 
 /* About Section - Home Page
 ------------------------------*/
@@ -1103,11 +1102,11 @@ section {
 }
 
 .about .content h3 {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 19px;
   padding: 10px 20px;
-  background: rgba(var(--color-primary-rgb), 0.05);
+  background: rgba(var(--color-primary-rgb), 0.1);
   color: var(--color-primary);
   border-radius: 7px;
   display: inline-block;
