@@ -1026,7 +1026,36 @@ section {
   text-align: center;
 }
 
-/* About Nimsa Section - Home Page */
+
+@media (max-width: 768px) {
+
+    .nimsatheme h2 {
+      text-align: center;
+      margin: auto;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .section-title1 h2:before,
+    .section-title1 h2:after {
+      content: "";
+      width: 50px;
+      height: 2px;
+      background: var(--color-primary);
+      display: inline-block;
+    }
+
+    .section-title1 h2:before {
+      margin: 0 15px 5px 0;
+    }
+
+    .section-title1 h2:after {
+      margin: 0 0 5px 15px;
+    }
+}
+
+
+/* Mission Section - Home Page */
 
 .missiontheme {
   --color-default: #ffffff;
@@ -1108,16 +1137,20 @@ section {
 
 @media (max-width: 768px) {
 
-  .missiontheme .image1a {
-    width: 50%;
-    height: 12%;
-  }
 
+  .missiontheme h2 {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 700;
+  }
   .missiontheme .three-columns {
     margin-top: 0;
     display: block;
   }
 }
+
+
 
 
 
@@ -1414,6 +1447,17 @@ section {
   padding-bottom: 0;
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+
+  .team h2 {
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
 }
 
 /* Call-to-action Section - Home Page
