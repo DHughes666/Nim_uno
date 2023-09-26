@@ -35,7 +35,7 @@
 
 /* Nav Menu Colors */
 :root {
-  --color-nav: #3a3939;
+  --color-nav: #eaeaed;
   --color-nav-hover: #e84545;
   --color-nav-dropdown: #3a3939;
   --color-nav-dropdown-hover: #e84545;
@@ -171,7 +171,7 @@ section {
 .header {
   --color-background: #ffffff;
   --color-inverse: #ffffff;
-  color: var(--color-default);
+  color: #ffffff;
   background-color: #E7E7E7;
   padding: 15px 0;
   transition: all 0.5s;
@@ -180,7 +180,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 20px;
+  max-height: 40px;
   margin-right: 6px;
 }
 
@@ -236,7 +236,7 @@ section {
 .scrolled .header {
   --color-background: #ffffff;
   --color-secondary: #444444;
-  --color-nav: #444444;
+  --color-nav: #c2e31c;
   --color-nav-hover: #e84545;
   box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
 }
@@ -268,7 +268,6 @@ section {
   --color-background: #ffffff;
   --color-secondary: #444444;
   --color-nav: #444444;
-;
   --color-nav-hover: #d83535;
 }
 
@@ -280,6 +279,7 @@ section {
   .navmenu {
     color: #000000;
     padding: 0;
+    width: 60%;
   }
 
   .navmenu ul {
@@ -294,16 +294,29 @@ section {
     position: relative;
   }
 
-  .navmenu a,
-  .navmenu a:focus {
-    color: var(--color-nav);
-    padding: 18px 15px;
-    font-size: 16px;
+  .navmenu a {
+    color: black !important;
+    padding: 18px 25px;
+    font-size: 17px;
     font-family: var(--font-secondary);
     font-weight: 400;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--color-nav);
+    padding: 18px 25px;
+    font-size: 17px;
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -323,7 +336,7 @@ section {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--color-nav-hover);
+    color: brown !important;
   }
 
   .navmenu .dropdown ul {
@@ -842,23 +855,30 @@ section {
 }
 
 .hero h2 {
-  margin: 0;
-  font-size: 44px;
+  text-align: center;
+  margin: auto;
+  font-size: 34px;
   font-weight: 700;
 }
 
 .hero p {
   color: rgba(var(--color-default-rgb), 0.8);
-  margin: 5px 0 0 0;
-  font-size: 20px;
+  border: 1px;
+  max-width: 500;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+  
 }
 
-.hero .sign-up-form {
-  margin-top: 20px;
-  padding: 10px;
-  border-radius: 7px;
-  background: var(--color-box-background);
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+.hero .action {
+  color: var(--color-inverse);
+  background: var(--color-primary);
+  font-size: 14px;
+  padding: 8px 26px;
+  margin: 0;
+  border-radius: 4px;
+  transition: 0.3s;
 }
 
 .hero .sign-up-form .form-control {
@@ -893,6 +913,156 @@ section {
     font-size: 18px;
   }
 }
+
+/* Partner - Home Page
+------------------------------*/
+.partner {
+  --color-default: #ffffff;
+  --color-default-rgb: 255, 255, 255;
+  --color-background: #262947;
+
+  width: 100%;
+  min-height: 30vh;
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner .container {
+  position: relative;
+  text-align: center;
+}
+
+.partner h2 {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.partner img {
+  margin-top: 60px;
+  width: 60%;
+  height: 10%;
+  
+}
+
+
+/* Nimsa Section - Home Page
+------------------------------*/
+
+.nimsatheme {
+  --color-default: #ffffff;
+  --color-default-rgb: 255, 255, 255;
+  --color-background: #FFFFFF;
+
+  width: 100%;
+  min-height: 5%;
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.nimsatheme .image1 {
+  width: 15%;
+  height: 30px;
+}
+
+
+.nimsatheme p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #000000;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.nimsatheme .image2 {
+  width: 100%;
+  height: 70px;
+}
+
+.nimsatheme .container {
+  position: relative;
+  text-align: center;
+}
+
+/* About Nimsa Section - Home Page */
+
+.abnimsatheme {
+  --color-default: #ffffff;
+  --color-default-rgb: 255, 255, 255;
+  --color-background: #FFFFFF;
+
+  width: 100%;
+  min-height: 5%;
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.abnimsatheme .container {
+  position: relative;
+  text-align: center;
+}
+
+.abnimsatheme .image1 {
+  width: 15%;
+  height: 30px;
+}
+
+.abnimsatheme .image1a {
+  margin-top: 3%;
+  width: 30%;
+  height: 8%;
+}
+
+.abnimsatheme .two-columns {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.abnimsatheme .column {
+  flex: 1;
+  padding: 10px;
+  border: none !important;
+}
+
+.abnimsatheme .imag0 {
+  width: 80%;
+  height: 100%;
+}
+
+.abnimsatheme p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #000000;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.abnimsatheme .three-columns {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.abnimsatheme .columny {
+  flex: 1;
+  padding: 10px;
+  border: none !important;
+}
+
+.abnimsatheme .image2 {
+  width: 100%;
+  height: 70px;
+}
+
 
 /* Clients Section - Home Page
 ------------------------------*/
