@@ -2192,3 +2192,167 @@ section {
   cursor: pointer;
 }
 
+
+/* -------------------------------------------|
+Partners and Sponsors - Global Network Page
+------------------------------*/
+
+.partnerstheme {
+  --color-default: #ffffff;
+  --color-default-rgb: 255, 255, 255;
+  --color-background: #FFFFFF;
+  width: 100%;
+  min-height: 5%;
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnerstheme .container {
+  position: relative;
+  text-align: center;
+}
+
+.partnerstheme .image1a {
+  width: 30%;
+  height: 8%;
+}
+
+.partnerstheme .read-more {
+  background: var(--color-primary);
+  color: var(--color-inverse);
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnerstheme .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.partnerstheme .read-more:hover {
+  background: rgba(var(--color-primary-rgb), 0.8);
+  padding-right: 19px;
+}
+
+.partnerstheme .read-more:hover i {
+  margin-left: 10px;
+}
+
+.partnerstheme p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #000000;
+  text-align: justify;
+  
+}
+
+.partnerstheme .three-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+
+.partnerstheme .columny {
+  flex: 1;
+  padding: 10px;
+  border: none !important;
+}
+
+.partnerstheme .image2 {
+  width: 100%;
+  height: 70px;
+}
+
+@media (max-width: 768px) {
+
+
+  .partnerstheme h2 {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .partnerstheme .three-columns {
+    margin-top: 0;
+    display: block;
+  }
+}
+
+
+/************************************************
+Global-Home Section
+*/
+.ghome {
+  --color-default: #ffffff;
+  --color-default-rgb: 255, 255, 255;
+  --color-background: #000000;
+  --color-background-rgb: 0, 0, 0;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 160px 0 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ghome img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.ghome:before {
+  content: "";
+  background: rgba(var(--color-background-rgb), 0.5);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.ghome .container {
+  position: relative;
+  z-index: 3;
+}
+
+.ghome h2 {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.ghome p {
+  color: rgba(var(--color-default-rgb), 0.8);
+  margin: 5px 20% 0 0;
+  font-size: 20px;
+  text-align: justify;
+}
+
+
+@media (max-width: 768px) {
+  .ghome h2 {
+    font-size: 32px;
+  }
+
+  .ghome p {
+    font-size: 18px;
+  }
+}
+
